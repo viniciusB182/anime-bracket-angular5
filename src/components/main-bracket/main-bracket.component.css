@@ -1,0 +1,112 @@
+/*
+ *  Flex Layout Specifics
+*/
+main{
+  display:flex;
+  flex-direction:row;
+}
+.round{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  min-width:280px;
+  list-style:none;
+  padding:0;
+}
+  .round .spacer{ flex-grow:1; }
+  .round .spacer:first-child,
+  .round .spacer:last-child{ flex-grow:.5; }
+
+  .round .game-spacer{
+    flex-grow:0.5;
+  }
+
+/*
+ *  General Styles
+*/
+body{
+  font-family:sans-serif;
+  font-size:small;
+  padding:10px;
+  line-height:1.4em;
+}
+
+li.game{
+  padding-left:20px;
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+}
+
+  li.game.winner{
+    font-weight:bold;
+  }
+  li.game span{
+    float:right;
+    margin-right:2px;
+  }
+
+  li.game-top{ 
+    border-bottom:2px solid #aaa; 
+  }
+
+  li.game-spacer{ 
+    border-right:2px solid #aaa;
+    min-height:50px;
+  }
+
+  li.game-spacer-eights{ 
+    border-right:2px solid #aaa;
+    min-height:200px;
+  }
+
+  li.game-spacer-fours{ 
+    border-right:2px solid #aaa;
+    min-height:400px;
+  }
+
+  li.game-spacer-final{ 
+    border-right:2px solid #aaa;
+    min-height:800px;
+  }
+
+  li.game-bottom{ 
+    border-top:2px solid #aaa;
+  }
+
+ .animeLogo {
+    width: 100px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .animeLogo:last-child::before {
+    content: "x";
+    margin-right: 10px;
+  }
+
+.animeLogoEights {
+    width: 150px;
+}
+
+
+.animeLogoFours {
+    width: 100px;
+    height: 40px;
+ }
+
+ .animeLogoSemi {
+    width: 200px;
+ }
+
+ .animeLogoFinal {
+    width: 400px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+  }

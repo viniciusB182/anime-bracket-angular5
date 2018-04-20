@@ -1,0 +1,253 @@
+<h1>Best Anime of All Time!</h1>
+
+<div class="sharethis-inline-share-buttons" data-image="https://firebasestorage.googleapis.com/v0/b/animebracke.appspot.com/o/attack-on-titan-logo.png?alt=media&token=1236494d-300c-4a13-9805-7ff21c19111c"></div>
+
+<h1 *ngIf="this.winner.name">Share or take a print!</h1>
+
+<main id="tournament">
+	<ul class="round round-1">
+		<div *ngFor="let anime of animeList; let i = index; let even = even">
+			<ng-container *ngIf="even">
+				<li class="spacer">&nbsp;</li>
+
+				<li class="game game-top"></li>
+				<li class="game game-spacer">
+					<div title="{{animeList[i].name}}" class="animeLogo">
+						<img (click)="this.setWinner1(anime, i)" src="{{animeList[i].logo}}">
+					</div>
+					&nbsp;
+					<div title="{{animeList[i + 1].name}}" class="animeLogo">
+						<img (click)="this.setWinner1(animeList[i + 1], i)" src="{{animeList[i + 1].logo}}">
+					</div>
+				</li>
+				<li class="game game-bottom "></li>
+
+			</ng-container>
+		</div>
+	</ul>
+	<ul class="round round-2">
+		<li class="spacer">&nbsp;</li>
+
+		<li class="game game-top"></li>
+		<li class="game game-spacer">
+			<div class="animeLogo">
+				<img (click)="this.setWinner2(this.winners1[0], 0)" src="{{winners1[0].logo}}">
+			</div>
+			&nbsp;
+			<div class="animeLogo">
+				<img (click)="this.setWinner2(this.winners1[2], 0)" src="{{winners1[2].logo}}">
+			</div>
+		</li>
+		<li class="game game-bottom "></li>
+
+		<li class="spacer">&nbsp;</li>
+
+		<li class="game game-top"></li>
+		<li class="game game-spacer">
+			<div class="animeLogo">
+				<img (click)="this.setWinner2(this.winners1[4], 1)" src="{{winners1[4].logo}}">
+			</div>
+			&nbsp;
+			<div class="animeLogo">
+				<img (click)="this.setWinner2(this.winners1[6], 1)" src="{{winners1[6].logo}}">
+			</div>
+		</li>
+		<li class="game game-bottom "></li>
+
+		<li class="spacer">&nbsp;</li>
+
+		<li class="game game-top"></li>
+		<li class="game game-spacer">
+			<div class="animeLogo">
+				<img (click)="this.setWinner2(this.winners1[8], 2)" src="{{winners1[8].logo}}">
+			</div>
+			&nbsp;
+			<div class="animeLogo">
+				<img (click)="this.setWinner2(this.winners1[10], 2)" src="{{winners1[10].logo}}">
+			</div>
+		</li>
+		<li class="game game-bottom "></li>
+
+		<li class="spacer">&nbsp;</li>
+
+		<li class="game game-top"></li>
+		<li class="game game-spacer">
+			<div class="animeLogo">
+				<img (click)="this.setWinner2(this.winners1[12], 3)" src="{{winners1[12].logo}}">
+			</div>
+			&nbsp;
+			<div class="animeLogo">
+				<img (click)="this.setWinner2(this.winners1[14], 3)" src="{{winners1[14].logo}}">
+			</div>
+		</li>
+		<li class="game game-bottom "></li>
+
+		<li class="spacer">&nbsp;</li>
+
+		<li class="game game-top"></li>
+		<li class="game game-spacer">
+			<div class="animeLogo">
+				<img (click)="this.setWinner2(this.winners1[16], 4)" src="{{winners1[16].logo}}">
+			</div>
+			&nbsp;
+			<div class="animeLogo">
+				<img (click)="this.setWinner2(this.winners1[18], 4)" src="{{winners1[18].logo}}">
+			</div>
+		</li>
+		<li class="game game-bottom "></li>
+
+		<li class="spacer">&nbsp;</li>
+
+		<li class="game game-top"></li>
+		<li class="game game-spacer">
+			<div class="animeLogo">
+				<img (click)="this.setWinner2(this.winners1[20], 5)" src="{{winners1[20].logo}}">
+			</div>
+			&nbsp;
+			<div class="animeLogo">
+				<img (click)="this.setWinner2(this.winners1[22], 5)" src="{{winners1[22].logo}}">
+			</div>
+		</li>
+		<li class="game game-bottom "></li>
+
+		<li class="spacer">&nbsp;</li>
+
+		<li class="game game-top"></li>
+		<li class="game game-spacer">
+			<div class="animeLogo">
+				<img (click)="this.setWinner2(this.winners1[24], 6)" src="{{winners1[24].logo}}">
+			</div>
+			&nbsp;
+			<div class="animeLogo">
+				<img (click)="this.setWinner2(this.winners1[26], 6)" src="{{winners1[26].logo}}">
+			</div>
+		</li>
+		<li class="game game-bottom "></li>
+
+		<li class="spacer">&nbsp;</li>
+
+		<li class="game game-top"></li>
+		<li class="game game-spacer">
+			<div class="animeLogo">
+				<img (click)="this.setWinner2(this.winners1[28], 7)" src="{{winners1[28].logo}}">
+			</div>
+			&nbsp;
+			<div class="animeLogo">
+				<img (click)="this.setWinner2(this.winners1[30], 7)" src="{{winners1[30].logo}}">
+			</div>
+		</li>
+		<li class="game game-bottom "></li>
+
+		<li class="spacer">&nbsp;</li>
+	</ul>
+	<ul class="round round-3">
+		<li class="spacer">&nbsp;</li>
+
+		<li class="game game-top"></li>
+		<li class="game game-spacer">
+			<div class="animeLogo">
+				<img (click)="this.setWinner3(this.winners2[0], 0)" src="{{winners2[0].logo}}">
+			</div>
+			&nbsp;
+			<div class="animeLogo">
+				<img (click)="this.setWinner3(this.winners2[1], 0)" src="{{winners2[1].logo}}">
+			</div>
+		</li>
+		<li class="game game-bottom "></li>
+
+		<li class="spacer">&nbsp;</li>
+
+		<li class="game game-top"></li>
+		<li class="game game-spacer">
+			<div class="animeLogo">
+				<img (click)="this.setWinner3(this.winners2[2], 1)" src="{{winners2[2].logo}}">
+			</div>
+			&nbsp;
+			<div class="animeLogo">
+				<img (click)="this.setWinner3(this.winners2[3], 1)" src="{{winners2[3].logo}}">
+			</div>
+		</li>
+		<li class="game game-bottom "></li>
+
+		<li class="spacer">&nbsp;</li>
+
+		<li class="game game-top"></li>
+		<li class="game game-spacer">
+			<div class="animeLogo">
+				<img (click)="this.setWinner3(this.winners2[4], 2)" src="{{winners2[4].logo}}">
+			</div>
+			&nbsp;
+			<div class="animeLogo">
+				<img (click)="this.setWinner3(this.winners2[5], 2)" src="{{winners2[5].logo}}">
+			</div>
+		</li>
+		<li class="game game-bottom "></li>
+
+		<li class="spacer">&nbsp;</li>
+
+		<li class="game game-top"></li>
+		<li class="game game-spacer">
+			<div class="animeLogo">
+				<img (click)="this.setWinner3(this.winners2[6], 3)" src="{{winners2[6].logo}}">
+			</div>
+			&nbsp;
+			<div class="animeLogo">
+				<img (click)="this.setWinner3(this.winners2[7], 3)" src="{{winners2[7].logo}}">
+			</div>
+		</li>
+		<li class="game game-bottom "></li>
+
+		<li class="spacer">&nbsp;</li>
+	</ul>
+	<ul class="round round-4">
+		<li class="spacer">&nbsp;</li>
+
+		<li class="game game-top"></li>
+		<li class="game game-spacer fours">
+			<div class="animeLogo">
+				<img (click)="this.setWinner4(this.winners3[0], 0)" src="{{winners3[0].logo}}">
+			</div>
+			&nbsp;
+			<div class="animeLogo">
+				<img (click)="this.setWinner4(this.winners3[1], 0)" src="{{winners3[1].logo}}">
+			</div>
+		</li>
+		<li class="game game-bottom "></li>
+		<li class="spacer">&nbsp;</li>
+
+		<li class="game game-top"></li>
+		<li class="game game-spacer fours">
+			<div class="animeLogo">
+				<img (click)="this.setWinner4(this.winners3[2], 1)" src="{{winners3[2].logo}}">
+			</div>
+			&nbsp;
+			<div class="animeLogo">
+				<img (click)="this.setWinner4(this.winners3[3], 1)" src="{{winners3[3].logo}}">
+			</div>
+		</li>
+		<li class="game game-bottom "></li>
+
+		<li class="spacer">&nbsp;</li>
+	</ul>
+	<ul class="round round-5">
+		<li class="spacer">&nbsp;</li>
+
+		<li class="game game-top"></li>
+		<li class="game game-spacer final">
+			<div class="animeLogo">
+				<img (click)="this.setWinner(this.winners4[0])" src="{{winners4[0].logo}}">
+			</div>
+			<div class="animeLogo">
+				<img (click)="this.setWinner(this.winners4[1])" src="{{winners4[1].logo}}">
+			</div>
+		</li>
+		<li class="game game-bottom "></li>
+
+		<li class="spacer">&nbsp;</li>
+	</ul>
+	<ul class="round round-6">
+		<div class="animeLogoFinal2">
+			<img src="{{winner.logo}}">
+		</div>
+	</ul>
+</main>
